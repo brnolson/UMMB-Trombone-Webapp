@@ -25,7 +25,7 @@ jobs:
       - name: Deploy Blazor WebAssembly to GitHub Pages
         uses: na1307/blazor-github-pages@v3.0
         with:
-          project-path: UMMB-Trombones/wwwroot/index.html
+          project-path: UMMB-Trombones/UMMB-Trombones.csproj
           publish-path: publish
           main-repo: false
           fix-404: true
