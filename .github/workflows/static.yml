@@ -23,20 +23,18 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Build Blazor WebAssembly project
-        run: dotnet publish UMMB-Trombones/UMMB-Trombones.csproj -c Release -o docs
+        run: dotnet publish UMMB-Trombones/UMMB-Trombones.csproj -c Release -o publish
 
-      - name: Move files out of wwwroot (so they're at root of docs/)
+      - name: Prepare docs folder
         run: |
-          mkdir temp
-          mv docs/wwwroot/* temp/
-          rm -rf docs/*
-          mv temp/* docs/
+          mkdir docs
+          mv publish/wwwroot/* docs/
+          touch docs/.nojekyll
 
-      - name: Disable Jekyll
-        run: touch docs/.nojekyll
-
-      - name: Deploy Blazor WebAssembly to GitHub Pages
-        uses: na1307/blazor-github-pages@v3.0
-        with:
-          project-path: UMMB-Trombones/UMMB-Trombones.csproj
-          publish-path: docs
+      - name: Commit and push to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "Deploy Blazor WASM to docs"
+          git push
