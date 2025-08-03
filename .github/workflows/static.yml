@@ -1,20 +1,19 @@
-name: Deploy Blazor WASM to GitHub Pages
+name: Deploy Blazor WASM from main to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup .NET
@@ -22,19 +21,10 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Build Blazor WebAssembly project
-        run: dotnet publish UMMB-Trombones/UMMB-Trombones.csproj -c Release -o publish
-
-      - name: Prepare docs folder
+      - name: Publish Blazor WebAssembly to docs
         run: |
+          dotnet publish UMMB-Trombones/UMMB-Trombones.csproj -c Release -o temp-publish
+          rm -rf docs
           mkdir docs
-          mv publish/wwwroot/* docs/
+          cp -r temp-publish/wwwroot/* docs/
           touch docs/.nojekyll
-
-      - name: Commit and push to main
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs
-          git commit -m "Deploy Blazor WASM to docs"
-          git push
