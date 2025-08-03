@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMMB-Trombones", "UMMB-Trombones.csproj", "{903F0039-3B9E-438C-B033-F4A71BD357DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{903F0039-3B9E-438C-B033-F4A71BD357DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903F0039-3B9E-438C-B033-F4A71BD357DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903F0039-3B9E-438C-B033-F4A71BD357DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903F0039-3B9E-438C-B033-F4A71BD357DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2989F2F8-648C-455F-96DC-EA7C15B061A4}
+	EndGlobalSection
+EndGlobal

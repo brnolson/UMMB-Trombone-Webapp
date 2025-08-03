@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+.vs/*
+.vscode/
+.vscode/*
+
+#User-Specific Files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+**/obj/**
+**/bin/**

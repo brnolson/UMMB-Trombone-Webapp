@@ -1,0 +1,57 @@
+﻿@page "/pregame-placements"
+@inject HttpClient Http
+
+<PageTitle>Weather</PageTitle>
+
+<h1>Weather</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (bandMembers == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name:</th>
+                <th>Last Name:</th>
+                <th>Placement:</th>
+                <th>Leader:</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bandMember in bandMembers)
+            {
+                <tr>
+                    <td>@bandMember.FirstName</td>
+                    <td>@bandMember.LastName</td>
+                    <td>@bandMember.Placement</td>
+                    <td>@bandMember.Leader</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private BandMember[]? bandMembers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        bandMembers = await Http.GetFromJsonAsync<BandMember[]>("data/pg.json");
+    }
+
+    public class BandMember
+    {
+        public required string FirstName { get; set; }
+
+        public required string LastName { get; set; }
+
+        public required string Placement { get; set; }
+
+        public required string Leader { get; set; }
+    }
+}
