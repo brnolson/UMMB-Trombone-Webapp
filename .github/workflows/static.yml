@@ -22,10 +22,11 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
+      - name: Build Blazor WebAssembly project
+        run: dotnet publish UMMB-Trombones/UMMB-Trombones.csproj -c Release -o publish
+
       - name: Deploy Blazor WebAssembly to GitHub Pages
         uses: na1307/blazor-github-pages@v3.0
         with:
           project-path: UMMB-Trombones/UMMB-Trombones.csproj
-          publish-path: publish
-          main-repo: false
-          fix-404: true
+          publish-path: publish/wwwroot
