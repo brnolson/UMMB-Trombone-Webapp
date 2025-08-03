@@ -25,6 +25,16 @@ jobs:
       - name: Build Blazor WebAssembly project
         run: dotnet publish UMMB-Trombones/UMMB-Trombones.csproj -c Release -o docs
 
+      - name: Move files out of wwwroot (so they're at root of docs/)
+        run: |
+          mkdir temp
+          mv docs/wwwroot/* temp/
+          rm -rf docs/*
+          mv temp/* docs/
+
+      - name: Disable Jekyll
+        run: touch docs/.nojekyll
+
       - name: Deploy Blazor WebAssembly to GitHub Pages
         uses: na1307/blazor-github-pages@v3.0
         with:
