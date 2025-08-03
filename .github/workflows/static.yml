@@ -29,4 +29,4 @@ jobs:
         uses: na1307/blazor-github-pages@v3.0
         with:
           project-path: UMMB-Trombones/UMMB-Trombones.csproj
-          publish-path: publish/wwwroot
+          publish-path: publish
