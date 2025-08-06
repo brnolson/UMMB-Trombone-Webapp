@@ -13,8 +13,22 @@ main[b-qw9aoynv99] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
+.about-button[b-qw9aoynv99] {
+    color: white;
+    padding: 5px 30px;
+    border-radius: 20px;
+    border: solid black 1px;
+    background-color: var(--maroon);
+    text-align: right;
+    transition: transform 0.3 ease;
+}
+
+.about-button:hover[b-qw9aoynv99] {
+    transform: scale(1.03);
+}
+
 .top-row[b-qw9aoynv99] {
-    background-color: var(--gold);
+    background-image: url('img/pride-pit.png');
     border-bottom: 1px solid #d6d5d5;
     justify-content: space-between;
     height: 3.5rem;
@@ -93,6 +107,14 @@ main[b-qw9aoynv99] {
 
 .navbar-dark[b-nb1uj2ckcf] {
     background-color: var(--maroon);
+    height: 4.5rem;
+}
+
+.icon[b-nb1uj2ckcf] {
+    height: 1.4em;
+    vertical-align: middle;
+    filter: invert(100%);
+    margin-right: 10px;
 }
 
 .bi[b-nb1uj2ckcf] {
@@ -165,8 +187,18 @@ main[b-qw9aoynv99] {
 
     .nav-scrollable[b-nb1uj2ckcf] {
         /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
+        height: calc(100vh - 4.5rem);
         overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav.flex-column[b-nb1uj2ckcf] {
+        flex-grow: 1;
+    }
+
+    .sidebar-footer[b-nb1uj2ckcf] {
+        margin-top: auto;
     }
 }
 /* /Pages/Home.razor.rz.scp.css */
@@ -174,18 +206,25 @@ main[b-qw9aoynv99] {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.title[b-9pqu7csn8p] {
-    font-size: 2rem;
-    font-weight: bold;
+.splash[b-9pqu7csn8p] {
+    width: 100%;
     color: white;
     text-align: center;
     margin-top: 20px;
-    max-width: 600px;
-    padding: 40px;
-    background-color: var(--maroon);
+    max-width: 800px;
     border-radius: 30px;
+}
+/* /Pages/Pregame.razor.rz.scp.css */
+.game-banner[b-iqwitfz0m3] {
+    width: 100%; 
+    max-width: 500px; 
+    max-height: 200px; 
+    border-radius: 10px;
+    object-fit: cover; 
+    display: block;
 }
