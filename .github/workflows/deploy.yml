@@ -1,0 +1,30 @@
+name: Build and Commit Vercel Output
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Publish Blazor WebAssembly
+      run: dotnet publish UMMB-Trombones/UMMB-Trombones.csproj -c Release -o vercel-output
+
+    - name: Commit vercel-output
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add vercel-output
+        git commit -m "Auto-publish vercel output"
+        git push
+      continue-on-error: true
