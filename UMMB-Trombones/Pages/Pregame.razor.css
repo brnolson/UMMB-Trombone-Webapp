@@ -1,0 +1,8 @@
+.game-banner {
+    width: 100%; 
+    max-width: 500px; 
+    max-height: 200px; 
+    border-radius: 10px;
+    object-fit: cover; 
+    display: block;
+}

@@ -1,40 +1,41 @@
 ﻿@page "/pregame-placements"
 @inject HttpClient Http
 
-<PageTitle>Weather</PageTitle>
+<PageTitle>Pregame Placements</PageTitle>
 
-<h1>Weather</h1>
+<div style=" width 100%; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+    <h1>Pregame Placements for:</h1>
+    <img class="game-banner" src="img/GameBanners/bulls.jpg" alt="Gophers VS Bulls">
 
-<p>This component demonstrates fetching data from the server.</p>
-
-@if (bandMembers == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>First Name:</th>
-                <th>Last Name:</th>
-                <th>Placement:</th>
-                <th>Leader:</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var bandMember in bandMembers)
-            {
+    @if (bandMembers == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>@bandMember.FirstName</td>
-                    <td>@bandMember.LastName</td>
-                    <td>@bandMember.Placement</td>
-                    <td>@bandMember.Leader</td>
+                    <th>First Name:</th>
+                    <th>Last Name:</th>
+                    <th>Placement:</th>
+                    <th>Leader:</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-}
+            </thead>
+            <tbody>
+                @foreach (var bandMember in bandMembers)
+                {
+                    <tr>
+                        <td>@bandMember.FirstName</td>
+                        <td>@bandMember.LastName</td>
+                        <td>@bandMember.Placement</td>
+                        <td>@bandMember.Leader</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
 
 @code {
     private BandMember[]? bandMembers;
