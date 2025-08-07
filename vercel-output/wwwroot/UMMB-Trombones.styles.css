@@ -208,7 +208,9 @@ main[b-mjcrxoo0ih] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    animation: fadeIn-b-9bp5xlg3h8 1s ease-in-out;
+  
 }
 
 .splash[b-9bp5xlg3h8] {
@@ -219,6 +221,11 @@ main[b-mjcrxoo0ih] {
     max-width: 800px;
     border-radius: 30px;
 
+}
+
+@keyframes fadeIn-b-9bp5xlg3h8 {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 /* /Pages/Pregame.razor.rz.scp.css */
 .game-banner[b-3zy2ldo6ja] {
