@@ -10,5 +10,29 @@
     "LastName": "Stotz",
     "Placement": "R11",
     "Leader": "Bek"
+  },
+  {
+    "FirstName": "Josh",
+    "LastName": "Davey",
+    "Placement": "R03",
+    "Leader": "Brenen"
+  },
+  {
+    "FirstName": "Thomas",
+    "LastName": "Ritten",
+    "Placement": "R04",
+    "Leader": "Aleah"
+  },
+  {
+    "FirstName": "Aleah",
+    "LastName": "Siddiqui",
+    "Placement": "R04",
+    "Leader": "Aleah"
+  },
+  {
+    "FirstName": "Bek",
+    "LastName": "Weiman",
+    "Placement": "R04",
+    "Leader": "Josh"
   }
 ]
