@@ -154,11 +154,12 @@ main[b-mjcrxoo0ih] {
 
     .nav-item[b-mb4uhew9cl]  a {
         color: white;
-        border-radius: 4px;
+        border-radius: 20px;
         height: 3rem;
         display: flex;
         align-items: center;
         line-height: 3rem;
+        transition: transform 0.2s ease;
     }
 
 .nav-item[b-mb4uhew9cl]  a.active {
@@ -169,6 +170,7 @@ main[b-mjcrxoo0ih] {
 .nav-item[b-mb4uhew9cl]  a:hover {
     background-color: rgba(255,255,255,0.1);
     color: white;
+    transform: translateY(-2px);
 }
 
 .nav-scrollable[b-mb4uhew9cl] {
@@ -201,6 +203,7 @@ main[b-mjcrxoo0ih] {
         margin-top: auto;
     }
 }
+
 /* /Pages/Home.razor.rz.scp.css */
 .container[b-9bp5xlg3h8] {
     width: 100%;
