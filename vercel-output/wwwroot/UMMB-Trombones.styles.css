@@ -208,7 +208,7 @@ main[b-mjcrxoo0ih] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 .splash[b-9bp5xlg3h8] {
@@ -218,6 +218,7 @@ main[b-mjcrxoo0ih] {
     margin-top: 20px;
     max-width: 800px;
     border-radius: 30px;
+
 }
 /* /Pages/Pregame.razor.rz.scp.css */
 .game-banner[b-3zy2ldo6ja] {

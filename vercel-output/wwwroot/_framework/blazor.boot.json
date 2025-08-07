@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "UMMB-Trombones",
   "resources": {
-    "hash": "sha256-gH422fV39bAIDTJbSzHzup78EHxp4Bc50aXkGL0NBMI=",
+    "hash": "sha256-86LXByLXILOvSYZxVyUa7HE7uFJLjoT9SkP/EC2WcCc=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-1QpKPnxEuRCElzcp+e3MrovJeAJkuzqKmRQay/6Aa08="
     },
@@ -49,7 +49,7 @@
       "System.Text.Json.wasm": "sha256-mUDa5HCBw4R1N0wCjFw2qGblqYAWdfgxy/mQLo2ewEA=",
       "System.Text.RegularExpressions.wasm": "sha256-YVSquKNmLT/T/5RKu/7rGnL0bW2rki1PzPv1Pd29VQI=",
       "System.Private.CoreLib.wasm": "sha256-9iDIMTV22hh1+Ku6OTyVyVFj58Lmw0pcfNJ+omeECHo=",
-      "UMMB-Trombones.wasm": "sha256-QfHPYrt2N0abE1gT+Jmv1Z34P/lNqLCcByblxEUqW/o="
+      "UMMB-Trombones.wasm": "sha256-Xi1tEBrsc3LPtQUYPbqv9N0sqlw3eGYVOAE52wuzgoQ="
     }
   },
   "cacheBootResources": true,
