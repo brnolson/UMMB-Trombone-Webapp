@@ -18,8 +18,19 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow: auto;
+}
 
+.menu {
+    max-width: 80%;
+    width: 100%;
+    border-radius: 50px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffcc33b0;
+    margin-bottom: 20px;
 }
 
 h1:focus {
