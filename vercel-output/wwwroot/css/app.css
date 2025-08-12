@@ -22,14 +22,16 @@ html, body {
 }
 
 .menu {
-    max-width: 80%;
+    min-width: 20em;
+    max-width: 60em;
     width: 100%;
-    border-radius: 50px;
+    border: solid black 2px;
+    border-radius: 20px;
     padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffcc33b0;
+    background-color: #c7cec4;
     margin-bottom: 20px;
 }
 

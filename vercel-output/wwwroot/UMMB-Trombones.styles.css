@@ -17,7 +17,6 @@ main[b-mjcrxoo0ih] {
     color: white;
     padding: 5px 30px;
     border-radius: 20px;
-    border: solid black 1px;
     background-color: var(--maroon);
     text-align: right;
     transition: transform 0.3 ease;
@@ -204,6 +203,35 @@ main[b-mjcrxoo0ih] {
     }
 }
 
+/* /Pages/Game.razor.rz.scp.css */
+.game-banner[b-6p9y7odbij] {
+    width: 100%; 
+    max-width: 500px; 
+    max-height: 200px; 
+    border-radius: 10px;
+    object-fit: cover; 
+    display: block;
+}
+
+/* Responsive table container */
+.table-container[b-6p9y7odbij] {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table styling */
+.table[b-6p9y7odbij] {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: large;
+}
+
+/* Responsive font size for small screens */
+@media (max-width: 640px) {
+    .table[b-6p9y7odbij] {
+        font-size: medium;
+    }
+}
 /* /Pages/Home.razor.rz.scp.css */
 .container[b-9bp5xlg3h8] {
     width: 100%;
@@ -229,13 +257,4 @@ main[b-mjcrxoo0ih] {
 @keyframes fadeIn-b-9bp5xlg3h8 {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
-/* /Pages/Pregame.razor.rz.scp.css */
-.game-banner[b-3zy2ldo6ja] {
-    width: 100%; 
-    max-width: 500px; 
-    max-height: 200px; 
-    border-radius: 10px;
-    object-fit: cover; 
-    display: block;
 }
