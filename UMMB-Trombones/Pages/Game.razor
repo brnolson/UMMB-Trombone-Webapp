@@ -1,0 +1,99 @@
+﻿@page "/game-placements"
+@inject HttpClient Http
+
+<PageTitle>Game Placements</PageTitle>
+
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+    <div class="menu">
+        <h1>Game Placements for:</h1>
+        <img class="game-banner" src="img/GameBanners/bulls.jpg" alt="Gophers VS Bulls">
+
+        @if (bandMembers == null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <!-- Search Bar -->
+            <div style="margin: 20px 0; width: 100%;">
+                <input type="text" 
+                       @bind="searchTerm" 
+                       @oninput="OnSearchInput"
+                       placeholder="Search by name or placement..." 
+                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 20px; font-size: 16px;" />
+            </div>
+
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>First:</th>
+                            <th>Last:</th>
+                            <th>Placement:</th>
+                            <th>Pride/Sky:</th>
+                            <th>Leader:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var bandMember in filteredBandMembers)
+                        {
+                            var rowId = $"{bandMember.FirstName}-{bandMember.LastName}".Replace(" ", "");
+                            <tr>
+                                <td>@bandMember.FirstName</td>
+                                <td>@bandMember.LastName</td>
+                                <td>@bandMember.Placement</td>
+                                <td>@bandMember.PrideSky</td>
+                                <td>@bandMember.Leader</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            
+            @if (filteredBandMembers.Length == 0 && !string.IsNullOrEmpty(searchTerm))
+            {
+                <p style="text-align: center; color: #666; margin-top: 20px;">
+                    No members found matching "@searchTerm"
+                </p>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    private BandMember[]? bandMembers;
+    private string searchTerm = string.Empty;
+    
+    private BandMember[] filteredBandMembers => 
+        bandMembers?.Where(member => 
+            string.IsNullOrEmpty(searchTerm) || 
+            member.FirstName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            member.LastName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            member.Placement.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            member.PrideSky.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            member.Leader.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)
+        ).ToArray() ?? Array.Empty<BandMember>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        bandMembers = await Http.GetFromJsonAsync<BandMember[]>("data/pg.json");
+    }
+
+    private void OnSearchInput(ChangeEventArgs e)
+    {
+        searchTerm = e.Value?.ToString() ?? string.Empty;
+    }
+
+    public class BandMember
+    {
+        public required string FirstName { get; set; }
+
+        public required string LastName { get; set; }
+
+        public required string Placement { get; set; }
+
+        public required string PrideSky { get; set; }
+
+        public required string Leader { get; set; }
+    }
+}

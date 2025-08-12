@@ -1,8 +1,12 @@
 ## Website Link
-[https://brnolson.github.io/UMMB-Trombone-Webapp/
+[https://ummb-trombones.vercel.app/
 ](https://ummb-trombones.vercel.app/)
 
 ## Vercel Output
 ```bash
 dotnet publish UMMB-Trombones/UMMB-Trombones.csproj -c Release -o vercel-output
 ```
+
+## Resources
+SVG Icons:
+- https://atlasicons.vectopus.com/ [licensed under MIT]

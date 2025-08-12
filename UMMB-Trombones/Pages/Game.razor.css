@@ -1,0 +1,28 @@
+.game-banner {
+    width: 100%; 
+    max-width: 500px; 
+    max-height: 200px; 
+    border-radius: 10px;
+    object-fit: cover; 
+    display: block;
+}
+
+/* Responsive table container */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: large;
+}
+
+/* Responsive font size for small screens */
+@media (max-width: 640px) {
+    .table {
+        font-size: medium;
+    }
+}

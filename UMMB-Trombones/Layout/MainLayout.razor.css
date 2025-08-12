@@ -16,7 +16,6 @@ main {
     color: white;
     padding: 5px 30px;
     border-radius: 20px;
-    border: solid black 1px;
     background-color: var(--maroon);
     text-align: right;
     transition: transform 0.3 ease;
