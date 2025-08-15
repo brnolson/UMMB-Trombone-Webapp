@@ -1,10 +1,80 @@
 ﻿@page "/schedule"
+@inject HttpClient Http
 
 <PageTitle>Schedule</PageTitle>
 
-<h1>Schedule</h1>
+<h1 style="text-align: center;">Trombone Schedule</h1>
 
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <!-- Horizontal Time Boxes -->
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; width: 100%;">
+        <div class="menu" style="flex: 1 1 300px; max-width: 400px;">
+            <h2>Pancake Time</h2>
+            @if (schedule == null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <p style="font-size: 1.5em;">🥞 @schedule.PancakeTime</p>
+            }
+        </div>
+
+        <div class="menu" style="flex: 1 1 300px; max-width: 400px;">
+            <h2>Game Day Warmup</h2>
+            @if (schedule == null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <p style="font-size: 1.5em;">🏈 @schedule.GameDayWarmup</p>
+            }
+        </div>
+    </div>
+
+    <!-- Sectional Calendar -->
+    <div class="menu" style="width: 100%; max-width: 800px;">
+        <h2>📅 Weekly Sectionals</h2>
+        @if (schedule == null)
+        {
+            <p><em>Loading sectional schedule...</em></p>
+        }
+        else
+        {
+            <div class="calendar-grid">
+                @foreach (var sectional in schedule.Sectionals)
+                {
+                    <div class="calendar-cell">
+                        <h3>@sectional.Day</h3>
+                        <p><strong>Time:</strong> @sectional.Time</p>
+                        <p><strong>Location:</strong> @sectional.Location</p>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
 
 @code {
-    
+    private TromboneSchedule? schedule;
+
+    protected override async Task OnInitializedAsync()
+    {
+        schedule = await Http.GetFromJsonAsync<TromboneSchedule>("data/schedule.json");
+    }
+
+    public class TromboneSchedule
+    {
+        public required string PancakeTime { get; set; }
+        public required string GameDayWarmup { get; set; }
+        public required Sectional[] Sectionals { get; set; }
+    }
+
+    public class Sectional
+    {
+        public required string Day { get; set; }
+        public required string Time { get; set; }
+        public required string Location { get; set; }
+    }
 }

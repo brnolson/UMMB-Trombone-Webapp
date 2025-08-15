@@ -1,0 +1,9 @@
+﻿{
+  "PancakeTime": "8:30 AM",
+  "GameDayWarmup": "2:00 PM",
+  "Sectionals": [
+    { "Day": "Monday", "Time": "4:00 PM", "Location": "Music Room 1" },
+    { "Day": "Wednesday", "Time": "5:30 PM", "Location": "Field House" },
+    { "Day": "Friday", "Time": "3:00 PM", "Location": "Band Hall" }
+  ]
+}

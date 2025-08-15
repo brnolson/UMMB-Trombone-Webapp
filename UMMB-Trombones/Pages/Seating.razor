@@ -2,9 +2,64 @@
 
 <PageTitle>Seating Charts</PageTitle>
 
-<h1>Seating Charts</h1>
+<h1 style="text-align: center;">Trombone Seating Charts</h1>
 
+<!-- 🔘 Navigation Buttons -->
+<div class="chart-nav">
+    <button @onclick="@(() => SelectChart("split"))">M/G Split</button>
+    <button @onclick="@(() => SelectChart("mrh"))">MRH</button>
+    <button @onclick="@(() => SelectChart("parade"))">Parade</button>
+    <button @onclick="@(() => SelectChart("gsr"))">GSR</button>
+    <button @onclick="@(() => SelectChart("indoor"))">Indoor</button>
+    <button @onclick="@(() => SelectChart("other"))">Other</button>
+</div>
+
+<!-- 🖼️ Chart Images -->
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 30px;">
+    <div id="split" class="menu chart-block @(selectedChart == "split" ? "glow" : "")">
+        <h2>Maroon/Gold Split</h2>
+        <img src="img/charts/split.png" alt="Maroon/Gold Split" />
+    </div>
+
+    <div id="mrh" class="menu chart-block @(selectedChart == "mrh" ? "glow" : "")">
+        <h2>MRH</h2>
+        <img src="img/charts/mrh.png" alt="MRH Chart" />
+    </div>
+
+    <div id="parade" class="menu chart-block @(selectedChart == "parade" ? "glow" : "")">
+        <h2>Parade</h2>
+        <img src="img/charts/parade.png" alt="Parade Chart" />
+    </div>
+
+    <div id="gsr" class="menu chart-block @(selectedChart == "gsr" ? "glow" : "")">
+        <h2>GSR</h2>
+        <img src="img/charts/gsr.png" alt="GSR Chart" />
+    </div>
+
+    <div id="indoor" class="menu chart-block @(selectedChart == "indoor" ? "glow" : "")">
+        <h2>Indoor</h2>
+        <img src="img/charts/indoor.png" alt="Indoor Chart" />
+    </div>
+
+    <div id="other" class="menu chart-block @(selectedChart == "other" ? "glow" : "")">
+        <h2>Other</h2>
+        <img src="img/charts/other.png" alt="Other Chart" />
+    </div>
+</div>
 
 @code {
-    
+    private string selectedChart = string.Empty;
+
+    private async Task SelectChart(string id)
+    {
+        selectedChart = id;
+        await ScrollToSection(id);
+    }
+
+    private async Task ScrollToSection(string id)
+    {
+        await JS.InvokeVoidAsync("scrollToSection", id);
+    }
+
+    [Inject] private IJSRuntime JS { get; set; } = default!;
 }

@@ -1,0 +1,28 @@
+﻿.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.calendar-cell {
+    background-color: #f0f4f1;
+    border: 2px solid #999;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calendar-cell:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+
+.calendar-cell h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}

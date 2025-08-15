@@ -35,6 +35,10 @@ html, body {
     margin-bottom: 20px;
 }
 
+h1 {
+    color: black
+}
+
 h1:focus {
     outline: none;
 }
