@@ -4,7 +4,7 @@
 
 <h1 style="text-align: center;">Trombone Seating Charts</h1>
 
-<!-- 🔘 Navigation Buttons -->
+<!-- Navigation Buttons -->
 <div class="chart-nav">
     <button @onclick="@(() => SelectChart("split"))">M/G Split</button>
     <button @onclick="@(() => SelectChart("mrh"))">MRH</button>
@@ -14,7 +14,7 @@
     <button @onclick="@(() => SelectChart("other"))">Other</button>
 </div>
 
-<!-- 🖼️ Chart Images -->
+<!-- Chart Images -->
 <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 30px;">
     <div id="split" class="menu chart-block @(selectedChart == "split" ? "glow" : "")">
         <h2>Maroon/Gold Split</h2>
@@ -53,8 +53,10 @@
     private async Task SelectChart(string id)
     {
         selectedChart = id;
+        await Task.Delay(100);
         await ScrollToSection(id);
     }
+
 
     private async Task ScrollToSection(string id)
     {
