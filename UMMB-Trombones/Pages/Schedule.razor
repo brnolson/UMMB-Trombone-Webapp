@@ -8,7 +8,7 @@
 <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px;">
     <!-- Horizontal Time Boxes -->
     <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; width: 100%;">
-        <div class="menu" style="flex: 1 1 300px; max-width: 400px;">
+        <div class="bubble-card" style="flex: 1 1 300px; max-width: 400px; background-color: #F5E4D3;">
             <h2>Pancake Time</h2>
             @if (schedule == null)
             {
@@ -20,7 +20,7 @@
             }
         </div>
 
-        <div class="menu" style="flex: 1 1 300px; max-width: 400px;">
+        <div class="bubble-card" style="flex: 1 1 300px; max-width: 400px;">
             <h2>Game Day Warmup</h2>
             @if (schedule == null)
             {
@@ -34,7 +34,7 @@
     </div>
 
     <!-- Sectional Calendar -->
-    <div class="menu" style="width: 100%; max-width: 800px;">
+    <div class="bubble-card" style="width: 100%; max-width: 800px; background-color: #E0D3F5;">
         <h2>📅 Weekly Sectionals</h2>
         @if (schedule == null)
         {

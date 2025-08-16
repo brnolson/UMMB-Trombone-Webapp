@@ -2,9 +2,68 @@
 
 <PageTitle>Forms & Links</PageTitle>
 
-<h1>Forms & Links</h1>
+<h1 style="text-align: center;">Forms & Links</h1>
 
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
+    @foreach (var item in linkCategories)
+    {
+        <div class="bubble-card" style="flex: 1 1 300px; max-width: 400px;">
+            <h2>@item.Title</h2>
+            <ul style="list-style: none; padding-left: 0;">
+                @foreach (var link in item.Links)
+                {
+                    <li style="margin: 8px 0;">
+                        <a href="@link.Url" target="_blank" style="text-decoration: none; color: #0078D4;">
+                            🔗 @link.Label
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+</div>
 
 @code {
-    
+    private List<LinkCategory> linkCategories = new()
+    {
+        new LinkCategory
+        {
+            Title = "🎓 Academic Forms",
+            Links = new List<LinkItem>
+            {
+                new LinkItem { Label = "Absence Form", Url = "https://example.com/absence" },
+                new LinkItem { Label = "Grade Appeal", Url = "https://example.com/grade-appeal" }
+            }
+        },
+        new LinkCategory
+        {
+            Title = "🎺 Band Resources",
+            Links = new List<LinkItem>
+            {
+                new LinkItem { Label = "Uniform Request", Url = "https://example.com/uniform" },
+                new LinkItem { Label = "Instrument Checkout", Url = "https://example.com/instrument" }
+            }
+        },
+        new LinkCategory
+        {
+            Title = "📅 Event Signups",
+            Links = new List<LinkItem>
+            {
+                new LinkItem { Label = "Game Day Signup", Url = "https://example.com/game-day" },
+                new LinkItem { Label = "Social RSVP", Url = "https://example.com/social" }
+            }
+        }
+    };
+
+    public class LinkCategory
+    {
+        public required string Title { get; set; }
+        public required List<LinkItem> Links { get; set; }
+    }
+
+    public class LinkItem
+    {
+        public required string Label { get; set; }
+        public required string Url { get; set; }
+    }
 }

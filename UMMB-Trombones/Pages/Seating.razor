@@ -15,34 +15,34 @@
 </div>
 
 <!-- Chart Images -->
-<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 30px;">
-    <div id="split" class="menu chart-block @(selectedChart == "split" ? "glow" : "")">
-        <h2>Maroon/Gold Split</h2>
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 90px;">
+    <div class="chart-container @(selectedChart == "split" ? "glow" : "")" id="split">
+        <div class="chart-title">Maroon/Gold Split</div>
         <img src="img/charts/split.png" alt="Maroon/Gold Split" />
     </div>
 
-    <div id="mrh" class="menu chart-block @(selectedChart == "mrh" ? "glow" : "")">
-        <h2>MRH</h2>
+    <div class="chart-container @(selectedChart == "mrh" ? "glow" : "")" id="mrh">
+        <div class="chart-title">MRH</div>
         <img src="img/charts/mrh.png" alt="MRH Chart" />
     </div>
 
-    <div id="parade" class="menu chart-block @(selectedChart == "parade" ? "glow" : "")">
-        <h2>Parade</h2>
+    <div class="chart-container @(selectedChart == "parade" ? "glow" : "")" id="parade">
+        <div class="chart-title">Parade</div>
         <img src="img/charts/parade.png" alt="Parade Chart" />
     </div>
 
-    <div id="gsr" class="menu chart-block @(selectedChart == "gsr" ? "glow" : "")">
-        <h2>GSR</h2>
+    <div class="chart-container @(selectedChart == "gsr" ? "glow" : "")" id="gsr">
+        <div class="chart-title">GSR</div>
         <img src="img/charts/gsr.png" alt="GSR Chart" />
     </div>
 
-    <div id="indoor" class="menu chart-block @(selectedChart == "indoor" ? "glow" : "")">
-        <h2>Indoor</h2>
+    <div class="chart-container @(selectedChart == "indoor" ? "glow" : "")" id="indoor">
+        <div class="chart-title">Indoor</div>
         <img src="img/charts/indoor.png" alt="Indoor Chart" />
     </div>
 
-    <div id="other" class="menu chart-block @(selectedChart == "other" ? "glow" : "")">
-        <h2>Other</h2>
+    <div class="chart-container @(selectedChart == "other" ? "glow" : "")" id="other">
+        <div class="chart-title">Other</div>
         <img src="img/charts/other.png" alt="Other Chart" />
     </div>
 </div>
@@ -56,7 +56,6 @@
         await Task.Delay(100);
         await ScrollToSection(id);
     }
-
 
     private async Task ScrollToSection(string id)
     {

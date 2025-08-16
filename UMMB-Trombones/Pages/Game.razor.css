@@ -8,22 +8,102 @@
     margin-bottom: 10px;
 }
 
-/* Responsive table container */
-.table-container {
+.search-bar {
     width: 100%;
-    overflow-x: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
 }
 
-/* Table styling */
-.table {
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     width: 100%;
-    border-collapse: collapse;
-    font-size: large;
 }
 
-/* Responsive font size for small screens */
-@media (max-width: 640px) {
-    .table {
-        font-size: medium;
+.member-pill-row {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f4f1;
+    border: 2px solid #999;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-pill-row:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+.member-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+.pill {
+    background-color: #d9e2da;
+    border: 2px solid #888;
+    border-radius: 999px;
+    padding: 4px 9px;
+    font-size: 0.95em;
+    color: #333;
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+}
+
+.pill:hover {
+    transform: translateY(-2px);
+}
+
+.pill-label {
+    font-size: 0.85em;
+    color: #666;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+@media (min-width: 1215px) {
+    .member-pill-row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .member-name {
+        flex: 0 0 auto;
+        margin-bottom: 0;
+        margin-right: 20px;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .pill-container {
+        flex: 1 1 auto;
+        justify-content: flex-end;
+    }
+
+    .pill-label {
+        display: inline;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pill-label {
+        display: none;
     }
 }

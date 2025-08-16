@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "UMMB-Trombones",
   "resources": {
-    "hash": "sha256-l4lMpOUOSwb1Y/d4H87o4OCNvsHP73IrFbaMSHtyhXQ=",
+    "hash": "sha256-fNBCkDxnziAs6o1D+qznr2c388MIrYrLwo5cj946j34=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-CN/vF6YK/IjIjXXCM3Bff6cZ6tPiDyjorgmgjDrE55Y="
     },
@@ -33,7 +33,7 @@
       "Microsoft.JSInterop.wasm": "sha256-FeT3eDjqvzYcjqhIDvvsv/iC0wDqLeu235YDwc0EOog=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-Nde97m8sZyz01NwVHDOJiS8YTnjxsDgzGTQGZ3ZxJ0w=",
       "System.Collections.Concurrent.wasm": "sha256-fPSbjPiLYyDibGS6P/wYMXI7CliFKoaa6mP1VM7l6bM=",
-      "System.Collections.wasm": "sha256-WdpWpbC5g/pMj+1/KaJvlNedqzrOnR+5OYSrZTjH2Ms=",
+      "System.Collections.wasm": "sha256-yuwwHFGSroGl9Hr0tJcqT0+bPlQzN69qzDkziAjuxJk=",
       "System.ComponentModel.wasm": "sha256-lRbXroqpgiwkr4tkgvfvB62KcB02uGaIE18tqI0d/iY=",
       "System.Console.wasm": "sha256-NYSMx3g31l4jiJciMAQKvZ+ORO0MCzFnbJZqW5Zqb6g=",
       "System.Diagnostics.DiagnosticSource.wasm": "sha256-ywJEurUPaOlkE+/Ct81BrVf/cFGqkDb7smYdrIF9kBo=",
@@ -44,12 +44,12 @@
       "System.Net.Primitives.wasm": "sha256-gkZfFGrjgg6qS9h0vSysbuP2SKdFdqVW52K8l5w5yGY=",
       "System.Private.Uri.wasm": "sha256-A/s6+NVS+BQI1cCm/0bITSXyL0a6O/XEBAiuVAfMeAU=",
       "System.Runtime.InteropServices.JavaScript.wasm": "sha256-YdYasJwRN+2MwcCdionXc6dnOjGpcCwBC9zjnoHQpCo=",
-      "System.Runtime.wasm": "sha256-ZdDlA2y5lQp3tl5iV49uN+9vJR9Ys9XhinYOr6ATAPs=",
+      "System.Runtime.wasm": "sha256-Hw/WU9U5RhOPYfD6fzOnhXryk9G6dT1lP5EXuW5wIio=",
       "System.Text.Encodings.Web.wasm": "sha256-TxId0lcB72W7M6URyCSyALsnP6TpMOt7+sQfz5jfiwQ=",
       "System.Text.Json.wasm": "sha256-mUDa5HCBw4R1N0wCjFw2qGblqYAWdfgxy/mQLo2ewEA=",
       "System.Text.RegularExpressions.wasm": "sha256-YVSquKNmLT/T/5RKu/7rGnL0bW2rki1PzPv1Pd29VQI=",
       "System.Private.CoreLib.wasm": "sha256-6QASJyMp7LbQMa+TyY5s/ZSyeCMKaHtHHM9hiM+FoQo=",
-      "UMMB-Trombones.wasm": "sha256-HzziztrQRdrz4e0Rk74KqbSAAEhoqjdsumN+p+HIvB4="
+      "UMMB-Trombones.wasm": "sha256-DlAtWi/mN2N0RJ7wWNdqUCy8TakFfpoHOGdP/0ifh9o="
     }
   },
   "cacheBootResources": true,

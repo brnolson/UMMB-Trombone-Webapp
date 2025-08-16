@@ -1,0 +1,29 @@
+.bubble-card {
+    min-width: 20em;
+    max-width: 60em;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c7cec4;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.bubble-card:hover {
+    transform: scale(1.02);
+}
+
+.bubble-card a {
+    color: #1a1a1a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bubble-card a:hover {
+    text-decoration: underline;
+}
