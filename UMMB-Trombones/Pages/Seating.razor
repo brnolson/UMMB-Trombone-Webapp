@@ -53,9 +53,12 @@
     private async Task SelectChart(string id)
     {
         selectedChart = id;
-        await Task.Delay(100);
+
+        await InvokeAsync(StateHasChanged);
+        await Task.Delay(200);
         await ScrollToSection(id);
     }
+
 
     private async Task ScrollToSection(string id)
     {
