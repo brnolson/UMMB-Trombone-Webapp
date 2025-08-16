@@ -29,19 +29,34 @@
 
     <script>
         window.scrollToSection = (id) => {
-            const element = document.getElementById(id);
+    const tryScroll = () => {
+        const element = document.getElementById(id);
             if (element) {
-                // Use scrollIntoView with smooth behavior
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const headerOffset = 80; // adjust as needed
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-                // Optional: Add a small delay and retry for mobile rendering quirks
-                setTimeout(() => {
-                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100);
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            } else {
+                // Retry after a short delay
+                setTimeout(tryScroll, 100);
             }
         };
+    tryScroll();
+};
+
 
     </script>
+
+    <script>
+        function setViewportHeight() {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        setViewportHeight();
+        window.addEventListener('resize', setViewportHeight);
+    </script>
+
     
     <script src="_framework/blazor.webassembly.js"></script>
     
