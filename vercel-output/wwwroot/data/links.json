@@ -1,0 +1,15 @@
+[
+  {
+    "Title": "🎺 Band Resources",
+    "Links": [
+      { "Label": "MBAT Attendance", "Url": "https://script.google.com/a/macros/umn.edu/s/AKfycbzt7fMAHtked9-IjRXg7yPseAkWYruOdahtfJts7EedSFqL5Sx5VOvDCk4bpyP6jKAv_Q/exec" }
+    ]
+  },
+  {
+    "Title": "🧠 Mental Health Resources",
+    "Links": [
+      { "Label": "mentalhealth.umn.edu", "Url": "http://mentalhealth.umn.edu/" },
+      { "Label": "Twin Cities well-being resources", "Url": "https://docs.google.com/document/d/1TQLKSmqZ-j9Jha2_M8AJnYbImNBlM5MRUj2CF-G1dfI/edit?usp=sharing" }
+    ]
+  }
+]

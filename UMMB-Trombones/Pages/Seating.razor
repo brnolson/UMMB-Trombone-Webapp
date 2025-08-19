@@ -10,60 +10,48 @@
     <button @onclick="@(() => SelectChart("mrh"))">MRH</button>
     <button @onclick="@(() => SelectChart("parade"))">Parade</button>
     <button @onclick="@(() => SelectChart("gsr"))">GSR</button>
-    <button @onclick="@(() => SelectChart("indoor"))">Indoor</button>
-    <button @onclick="@(() => SelectChart("other"))">Other</button>
+    <button @onclick="@(() => SelectChart("blockband"))">Block Band</button>
+    <button @onclick="@(() => SelectChart("ppa"))">PPA Groups</button>
+    <button class="show-all-btn" @onclick="@(() => SelectChart(string.Empty))">Show All</button>
+
 </div>
 
 <!-- Chart Images -->
 <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 90px;">
-    <div class="chart-container @(selectedChart == "split" ? "glow" : "")" id="split">
-        <div class="chart-title">Maroon/Gold Split</div>
-        <img src="img/charts/split.png" alt="Maroon/Gold Split" />
-    </div>
-
-    <div class="chart-container @(selectedChart == "mrh" ? "glow" : "")" id="mrh">
-        <div class="chart-title">MRH</div>
-        <img src="img/charts/mrh.png" alt="MRH Chart" />
-    </div>
-
-    <div class="chart-container @(selectedChart == "parade" ? "glow" : "")" id="parade">
-        <div class="chart-title">Parade</div>
-        <img src="img/charts/parade.png" alt="Parade Chart" />
-    </div>
-
-    <div class="chart-container @(selectedChart == "gsr" ? "glow" : "")" id="gsr">
-        <div class="chart-title">GSR</div>
-        <img src="img/charts/gsr.png" alt="GSR Chart" />
-    </div>
-
-    <div class="chart-container @(selectedChart == "indoor" ? "glow" : "")" id="indoor">
-        <div class="chart-title">Indoor</div>
-        <img src="img/charts/indoor.png" alt="Indoor Chart" />
-    </div>
-
-    <div class="chart-container @(selectedChart == "other" ? "glow" : "")" id="other">
-        <div class="chart-title">Other</div>
-        <img src="img/charts/other.png" alt="Other Chart" />
-    </div>
+    @foreach (var chart in chartData)
+    {
+        if (string.IsNullOrEmpty(selectedChart) || chart.Id == selectedChart)
+        {
+            <div class="chart-container">
+                <div class="chart-title">@chart.Title</div>
+                <img src="@chart.ImagePath" alt="@chart.Title" />
+            </div>
+        }
+    }
 </div>
 
 @code {
     private string selectedChart = string.Empty;
 
-    private async Task SelectChart(string id)
+    private void SelectChart(string id)
     {
         selectedChart = id;
-
-        await InvokeAsync(StateHasChanged);
-        await Task.Delay(200);
-        await ScrollToSection(id);
     }
 
-
-    private async Task ScrollToSection(string id)
+    private List<ChartInfo> chartData = new()
     {
-        await JS.InvokeVoidAsync("scrollToSection", id);
-    }
+        new ChartInfo { Id = "split", Title = "Maroon/Gold Split", ImagePath = "img/charts/split.png" },
+        new ChartInfo { Id = "mrh", Title = "MRH", ImagePath = "img/charts/mrh.png" },
+        new ChartInfo { Id = "parade", Title = "Parade", ImagePath = "img/charts/parade.png" },
+        new ChartInfo { Id = "gsr", Title = "GSR", ImagePath = "img/charts/gsr.png" },
+        new ChartInfo { Id = "blockband", Title = "Block Band", ImagePath = "img/charts/blockband.png" },
+        new ChartInfo { Id = "ppa", Title = "PPA Groups", ImagePath = "img/charts/ppa.png" }
+    };
 
-    [Inject] private IJSRuntime JS { get; set; } = default!;
+    public class ChartInfo
+    {
+        public required string Id { get; set; }
+        public required string Title { get; set; }
+        public required string ImagePath { get; set; }
+    }
 }

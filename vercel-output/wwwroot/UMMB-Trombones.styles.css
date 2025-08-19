@@ -443,19 +443,26 @@ main[b-mjcrxoo0ih] {
 .chart-nav button[b-baby3f24d8] {
     padding: 10px;
     font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    background-color: #4a90e2;
-    color: white;
+    border: solid black 2px;
+    border-radius: 50px;
+    background-color: #e7b1c0;
+    color: black;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .chart-nav button:hover[b-baby3f24d8] {
-    background-color: #357ab8;
+    background-color: #cb99a7;
 }
 
-/* Updated chart layout */
+.chart-nav .show-all-btn[b-baby3f24d8] {
+    background-color: #a4d4ae;
+}
+
+.chart-nav .show-all-btn:hover[b-baby3f24d8] {
+    background-color: #8bbf98;
+}
+
 .chart-container[b-baby3f24d8] {
     width: 100%;
     max-width: 800px;
@@ -484,9 +491,3 @@ main[b-mjcrxoo0ih] {
     margin: 10px 0 0;
     color: #333;
 }
-
-.chart-container.glow[b-baby3f24d8] {
-    box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.7);
-}
-
-/* Remove old chart-block styles */

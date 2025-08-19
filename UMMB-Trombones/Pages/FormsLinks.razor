@@ -1,4 +1,6 @@
 ﻿@page "/forms-links"
+@using System.Text.Json
+@inject HttpClient Http
 
 <PageTitle>Forms & Links</PageTitle>
 
@@ -24,36 +26,13 @@
 </div>
 
 @code {
-    private List<LinkCategory> linkCategories = new()
+    private List<LinkCategory> linkCategories = new();
+
+    protected override async Task OnInitializedAsync()
     {
-        new LinkCategory
-        {
-            Title = "🎓 Academic Forms",
-            Links = new List<LinkItem>
-            {
-                new LinkItem { Label = "Absence Form", Url = "https://example.com/absence" },
-                new LinkItem { Label = "Grade Appeal", Url = "https://example.com/grade-appeal" }
-            }
-        },
-        new LinkCategory
-        {
-            Title = "🎺 Band Resources",
-            Links = new List<LinkItem>
-            {
-                new LinkItem { Label = "Uniform Request", Url = "https://example.com/uniform" },
-                new LinkItem { Label = "Instrument Checkout", Url = "https://example.com/instrument" }
-            }
-        },
-        new LinkCategory
-        {
-            Title = "📅 Event Signups",
-            Links = new List<LinkItem>
-            {
-                new LinkItem { Label = "Game Day Signup", Url = "https://example.com/game-day" },
-                new LinkItem { Label = "Social RSVP", Url = "https://example.com/social" }
-            }
-        }
-    };
+        var json = await Http.GetStringAsync("data/links.json");
+        linkCategories = JsonSerializer.Deserialize<List<LinkCategory>>(json) ?? new();
+    }
 
     public class LinkCategory
     {

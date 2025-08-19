@@ -1,9 +1,11 @@
 ﻿{
-  "PancakeTime": "8:30 AM",
-  "GameDayWarmup": "2:00 PM",
+  "PancakeTime": "NOT SET",
+  "GameDayWarmup": "NOT SET",
   "Sectionals": [
-    { "Day": "Monday", "Time": "4:00 PM", "Location": "Music Room 1" },
-    { "Day": "Wednesday", "Time": "5:30 PM", "Location": "Field House" },
-    { "Day": "Friday", "Time": "3:00 PM", "Location": "Band Hall" }
+    { "Day": "Monday", "Time": "NOT SET", "Location": "NOT SET" },
+    { "Day": "Tuesday", "Time": "NOT SET", "Location": "NOT SET" },
+    { "Day": "Wednesday", "Time": "NOT SET", "Location": "NOT SET" },
+    { "Day": "Thursday", "Time": "NOT SET", "Location": "NOT SET" },
+    { "Day": "Friday", "Time": "NOT SET", "Location": "NOT SET" }
   ]
 }
