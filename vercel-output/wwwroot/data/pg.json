@@ -49,7 +49,7 @@
     "Leader": "Bek"
   },
   {
-    "FirstName": "Samuel",
+    "FirstName": "Samwich",
     "LastName": "Carland",
     "Placement": "R13",
     "PrideSky": "Pride",
@@ -229,6 +229,13 @@
     "Placement": "R18",
     "PrideSky": "Pride",
     "Leader": "Josh"
+  },
+  {
+    "FirstName": "Shu",
+    "LastName": "Thomas",
+    "Placement": "R10",
+    "PrideSky": "Pride",
+    "Leader": "Bek"
   },
   {
     "FirstName": "Grace",
