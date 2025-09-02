@@ -343,6 +343,18 @@ main[b-mjcrxoo0ih] {
         display: none;
     }
 }
+
+@media (max-width: 700px) {
+    .pill[b-6p9y7odbij] {
+        font-size: 0.75em;
+        padding: 2px 6px;
+    }
+
+    .pill-container[b-6p9y7odbij] {
+        gap: 7px;
+    }
+}
+
 /* /Pages/Home.razor.rz.scp.css */
 .container[b-9bp5xlg3h8] {
     width: 100%;

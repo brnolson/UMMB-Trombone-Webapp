@@ -1,11 +1,12 @@
 ﻿{
   "PancakeTime": "NOT SET",
-  "GameDayWarmup": "1:25pm",
+  "GameDayWarmup": "NOT SET",
   "Sectionals": [
-    { "Day": "Monday", "Time": "NOT SET", "Location": "NOT SET" },
-    { "Day": "Tuesday", "Time": "NOT SET", "Location": "NOT SET" },
-    { "Day": "Wednesday", "Time": "NOT SET", "Location": "NOT SET" },
-    { "Day": "Thursday", "Time": "NOT SET", "Location": "NOT SET" },
-    { "Day": "Friday", "Time": "NOT SET", "Location": "NOT SET" }
+    { "Day": "Monday", "Time": "6:05 pm", "Location": "Andrew" },
+    { "Day": "Tuesday", "Time": "3:50 pm", "Location": "Thomas" },
+    { "Day": "Tuesday", "Time": "6:05 pm", "Location": "Josh" },
+    { "Day": "Wednesday", "Time": "3:50 pm", "Location": "Brenen"},
+    { "Day": "Wednesday", "Time": "6:05 pm", "Location": "Bek" },
+    { "Day": "Thursday", "Time": "3:50 pm", "Location": "Aleah" }
   ]
 }
