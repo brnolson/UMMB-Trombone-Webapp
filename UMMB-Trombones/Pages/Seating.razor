@@ -12,6 +12,7 @@
     <button @onclick="@(() => SelectChart("gsr"))">GSR</button>
     <button @onclick="@(() => SelectChart("blockband"))">Block Band</button>
     <button @onclick="@(() => SelectChart("ppa"))">PPA Groups</button>
+    <button @onclick="@(() => SelectChart("section"))">Sectionals</button>
     <button class="show-all-btn" @onclick="@(() => SelectChart(string.Empty))">Show All</button>
 
 </div>
@@ -45,7 +46,9 @@
         new ChartInfo { Id = "parade", Title = "Parade", ImagePath = "img/charts/parade.png" },
         new ChartInfo { Id = "gsr", Title = "GSR", ImagePath = "img/charts/gsr.png" },
         new ChartInfo { Id = "blockband", Title = "Block Band", ImagePath = "img/charts/blockband.png" },
-        new ChartInfo { Id = "ppa", Title = "PPA Groups", ImagePath = "img/charts/ppa.png" }
+        new ChartInfo { Id = "ppa", Title = "PPA Groups", ImagePath = "img/charts/ppa.png" },
+        new ChartInfo { Id = "section", Title = "Sectionals", ImagePath = "img/charts/sectional.png" }
+
     };
 
     public class ChartInfo

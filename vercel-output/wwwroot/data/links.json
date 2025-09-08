@@ -2,7 +2,9 @@
   {
     "Title": "🎺 Band Resources",
     "Links": [
-      { "Label": "MBAT Attendance", "Url": "z.umn.edu/mbat" }
+      { "Label": "MBAT Attendance", "Url": "https://z.umn.edu/mbat" },
+      { "Label": "Pregame Preference Form", "Url": "https://docs.google.com/forms/d/e/1FAIpQLSfKm68L7NctdTkbgwEnmTPTjM80YCKQxggGXcd9C-_b6Siz1A/viewform?usp=sharing&ouid=107128611276258430447" },
+      { "Label": "Rank Treat Signups", "Url": "https://docs.google.com/document/d/1gsXruYV25fhRl1eIu37xxPpRZh59FqVczIgzYBn9iFo/edit?usp=sharing" }
     ]
   },
   {
