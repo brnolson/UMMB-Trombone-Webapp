@@ -355,6 +355,126 @@ main[b-mjcrxoo0ih] {
     }
 }
 
+/* /Pages/Halftime.razor.rz.scp.css */
+.menu[b-scs4pwsunl] {
+    background-color: #ceb8d6;
+}
+
+.game-banner[b-scs4pwsunl] {
+    width: 100%; 
+    max-width: 500px; 
+    max-height: 200px; 
+    border-radius: 10px;
+    object-fit: cover; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+.search-bar[b-scs4pwsunl] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.member-list[b-scs4pwsunl] {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.member-pill-row[b-scs4pwsunl] {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f4f1;
+    border: 2px solid #999;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-pill-row:hover[b-scs4pwsunl] {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+.member-name[b-scs4pwsunl] {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.pill-container[b-scs4pwsunl] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+.pill[b-scs4pwsunl] {
+    background-color: #d9e2da;
+    border: 2px solid #888;
+    border-radius: 999px;
+    padding: 4px 9px;
+    font-size: 1em;
+    color: #333;
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+}
+
+.pill:hover[b-scs4pwsunl] {
+    transform: translateY(-2px);
+}
+
+.pill-label[b-scs4pwsunl] {
+    font-size: 0.85em;
+    color: #666;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+@media (min-width: 1215px) {
+    .member-pill-row[b-scs4pwsunl] {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .member-name[b-scs4pwsunl] {
+        flex: 0 0 auto;
+        margin-bottom: 0;
+        margin-right: 20px;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .pill-container[b-scs4pwsunl] {
+        flex: 1 1 auto;
+        justify-content: flex-end;
+    }
+
+    .pill-label[b-scs4pwsunl] {
+        display: inline;
+    }
+}
+
+@media (max-width: 700px) {
+    .pill[b-scs4pwsunl] {
+        font-size: 1em;
+        padding: 2px 6px;
+    }
+
+    .pill-container[b-scs4pwsunl] {
+        gap: 7px;
+    }
+}
+
 /* /Pages/Home.razor.rz.scp.css */
 .container[b-9bp5xlg3h8] {
     width: 100%;

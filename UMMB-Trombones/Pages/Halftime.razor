@@ -1,0 +1,80 @@
+﻿@page "/halftime"
+@inject HttpClient Http
+
+<PageTitle>Halftime Dots</PageTitle>
+
+<h1 style="text-align: center;">Halftime Dots for:</h1>
+<h1 style="text-align: center;">Game 3: Big Band</h1>
+<div style="width: 100%; display: flex; justify-content: center;">
+    <img class="game-banner" src="img/GameBanners/halftime.jpg" alt="Mound of Sound" />
+</div>
+
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+    <div class="menu">
+        @if (bandMembers == null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <!-- Search Bar -->
+            <div style="margin: 20px 0; width: 100%;">
+                <input type="text" 
+                    @bind="searchTerm" 
+                    @oninput="OnSearchInput"
+                    placeholder="Search by name or dot..." 
+                    class="search-bar" />
+            </div>
+
+            <div class="member-list">
+                @foreach (var bandMember in filteredBandMembers)
+                {
+                    <div class="member-pill-row">
+                        <div class="member-name">@bandMember.Name</div>
+                        <div class="pill-container">
+                            <span class="pill-label">Dot:</span>
+                            <span class="pill" style="background-color: #F5D3E8;">@bandMember.Dot</span>
+                        </div>
+                    </div>
+
+                }
+            </div>
+
+            @if (filteredBandMembers.Length == 0 && !string.IsNullOrEmpty(searchTerm))
+            {
+                <p style="text-align: center; color: #666; margin-top: 20px;">
+                    No members found matching "@searchTerm"
+                </p>
+            }
+        }
+
+    </div>
+</div>
+
+@code {
+    private BandMember[]? bandMembers;
+    private string searchTerm = string.Empty;
+    
+    private BandMember[] filteredBandMembers => 
+        bandMembers?.Where(member => 
+            string.IsNullOrEmpty(searchTerm) || 
+            member.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            member.Dot.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)
+        ).ToArray() ?? Array.Empty<BandMember>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        bandMembers = await Http.GetFromJsonAsync<BandMember[]>("data/halftime.json");
+    }
+
+    private void OnSearchInput(ChangeEventArgs e)
+    {
+        searchTerm = e.Value?.ToString() ?? string.Empty;
+    }
+
+    public class BandMember
+    {
+        public required string Name { get; set; }
+        public required string Dot { get; set; }
+    }
+}
