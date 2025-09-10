@@ -4,7 +4,7 @@
 <PageTitle>Game Placements</PageTitle>
 
 <h1 style="text-align: center;">Game Placements for:</h1>
-<h1 style="text-align: center;">Gophers VS Demons</h1>
+<h1 style="text-align: center;">Gophers VS Scarlet Knights</h1>
 <div style="width: 100%; display: flex; justify-content: center;">
     <img class="game-banner" src="img/GameBanners/pregame.jpg" alt="Pregame M" />
 </div>
@@ -66,6 +66,7 @@
             string.IsNullOrEmpty(searchTerm) || 
             member.FirstName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
             member.LastName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            $"{member.FirstName} {member.LastName}".Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
             member.Placement.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
             member.PrideSky.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)
         ).ToArray() ?? Array.Empty<BandMember>();
