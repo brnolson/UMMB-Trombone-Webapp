@@ -1,59 +1,59 @@
 [
   {
     "Name": "Aaron Maust",
-    "Dot": "R17"
-  },
-  {
-    "Name": "Aleah Siddiqui",
-    "Dot": "R04"
-  },
-  {
-    "Name": "Allison House",
     "Dot": "R15"
   },
   {
-    "Name": "Andrew Stotz",
+    "Name": "Aleah Siddiqui",
     "Dot": "R16"
   },
   {
+    "Name": "Allison House",
+    "Dot": "R04"
+  },
+  {
+    "Name": "Andrew Stotz",
+    "Dot": "R34"
+  },
+  {
     "Name": "Austin Kempen",
-    "Dot": "R07"
+    "Dot": "R06"
   },
   {
     "Name": "Bek Weiman",
-    "Dot": "R01"
-  },
-  {
-    "Name": "Ben Yost",
-    "Dot": "R18"
-  },
-  {
-    "Name": "Brandon Youngren",
-    "Dot": "R24"
-  },
-  {
-    "Name": "Brenen Holeson",
-    "Dot": "R05"
-  },
-  {
-    "Name": "Brenen Olson",
-    "Dot": "R41"
-  },
-  {
-    "Name": "Caden Anderson",
-    "Dot": "R08"
-  },
-  {
-    "Name": "Chloe Leeseberg",
     "Dot": "R14"
   },
   {
-    "Name": "Chuckles Buboltz",
+    "Name": "Ben Yost",
     "Dot": "R19"
   },
   {
+    "Name": "Brandon Youngren",
+    "Dot": "R09"
+  },
+  {
+    "Name": "Brenen Holeson",
+    "Dot": "R41"
+  },
+  {
+    "Name": "Brenen Olson",
+    "Dot": "R01"
+  },
+  {
+    "Name": "Caden Anderson",
+    "Dot": "R07"
+  },
+  {
+    "Name": "Chloe Leeseberg",
+    "Dot": "R30"
+  },
+  {
+    "Name": "Chuckles Buboltz",
+    "Dot": "R27"
+  },
+  {
     "Name": "Cyan Beitelspacher",
-    "Dot": "R12"
+    "Dot": "R08"
   },
   {
     "Name": "Ella Lang",
@@ -61,15 +61,15 @@
   },
   {
     "Name": "Errson Bailey",
-    "Dot": "R30"
+    "Dot": "R17"
   },
   {
     "Name": "Evan Hawrysz",
-    "Dot": "R31"
+    "Dot": "R33"
   },
   {
     "Name": "Eve Kaegebein",
-    "Dot": "R09"
+    "Dot": "R26"
   },
   {
     "Name": "Grace Zas",
@@ -77,90 +77,90 @@
   },
   {
     "Name": "Grace! Umhoefer",
-    "Dot": "R06"
+    "Dot": "R24"
   },
   {
     "Name": "Henry Staat",
-    "Dot": "R02"
-  },
-  {
-    "Name": "Isabelle Albee",
-    "Dot": "R38"
-  },
-  {
-    "Name": "Jack Begnaud",
-    "Dot": "R20"
-  },
-  {
-    "Name": "Joel Wilmot",
-    "Dot": "R27"
-  },
-  {
-    "Name": "Josh Davey",
     "Dot": "R11"
   },
   {
-    "Name": "Julianne Erickson",
-    "Dot": "R10"
-  },
-  {
-    "Name": "Kaden Kasel",
-    "Dot": "R26"
-  },
-  {
-    "Name": "Luke Hilliard",
-    "Dot": "R32"
-  },
-  {
-    "Name": "Martin Michelli",
-    "Dot": "R25"
-  },
-  {
-    "Name": "Max Albers",
-    "Dot": "R39"
-  },
-  {
-    "Name": "Miles Sadler",
-    "Dot": "R40"
-  },
-  {
-    "Name": "Nathan Riemer",
-    "Dot": "R29"
-  },
-  {
-    "Name": "Reid Hansche",
-    "Dot": "R36"
-  },
-  {
-    "Name": "Ruby Nevarez Wielenberg",
-    "Dot": "R28"
-  },
-  {
-    "Name": "Sam Herrera",
-    "Dot": "R35"
-  },
-  {
-    "Name": "Samwich Carland",
-    "Dot": "R34"
-  },
-  {
-    "Name": "Shu Thomas",
-    "Dot": "R33"
-  },
-  {
-    "Name": "Thomas Ritten",
+    "Name": "Isabelle Albee",
     "Dot": "R21"
   },
   {
-    "Name": "Tymek Luiken",
-    "Dot": "R37"
+    "Name": "Jack Begnaud",
+    "Dot": "R13"
   },
   {
-    "Name": "Will Giles",
+    "Name": "Joel Wilmot",
+    "Dot": "R05"
+  },
+  {
+    "Name": "Josh Davey",
+    "Dot": "R28"
+  },
+  {
+    "Name": "Julianne Erickson",
+    "Dot": "R18"
+  },
+  {
+    "Name": "Kaden Kasel",
+    "Dot": "R25"
+  },
+  {
+    "Name": "Luke Hilliard",
     "Dot": "R23"
   },
   {
+    "Name": "Martin Michelli",
+    "Dot": "R35"
+  },
+  {
+    "Name": "Max Albers",
+    "Dot": "R31"
+  },
+  {
+    "Name": "Miles Sadler",
+    "Dot": "R38"
+  },
+  {
+    "Name": "Nathan Riemer",
+    "Dot": "R36"
+  },
+  {
+    "Name": "Reid Hansche",
+    "Dot": "R02"
+  },
+  {
+    "Name": "Ruby Nevarez Wielenberg",
+    "Dot": "R29"
+  },
+  {
+    "Name": "Sam Herrera",
+    "Dot": "R37"
+  },
+  {
+    "Name": "Samwich Carland",
+    "Dot": "R12"
+  },
+  {
+    "Name": "Shu Thomas",
+    "Dot": "R32"
+  },
+  {
+    "Name": "Thomas Ritten",
+    "Dot": "R10"
+  },
+  {
+    "Name": "Tymek Luiken",
+    "Dot": "R39"
+  },
+  {
+    "Name": "Will Giles",
+    "Dot": "R20"
+  },
+  {
     "Name": "Will Moen",
-    "Dot": "R13"
+    "Dot": "R40"
   }
 ]
