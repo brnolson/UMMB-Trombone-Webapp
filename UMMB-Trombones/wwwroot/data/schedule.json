@@ -1,6 +1,6 @@
 ﻿{
-  "PancakeTime": "TBD",
-  "GameDayWarmup": "TBD",
+  "PancakeTime": "6:30am",
+  "GameDayWarmup": "8:05am",
   "Sectionals": [
     { "Day": "Monday", "Time": "6:05 pm", "Location": "Andrew" },
     { "Day": "Tuesday", "Time": "3:50 pm", "Location": "Thomas" },
