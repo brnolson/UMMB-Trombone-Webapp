@@ -2,147 +2,147 @@
   {
     "FirstName": "Isabelle",
     "LastName": "Albee",
-    "Placement": "B1G",
+    "Placement": "R26",
     "PrideSky": "TBD",
-    "Leader": "Bek"
+    "Leader": "Josh"
   },
   {
     "FirstName": "Max",
     "LastName": "Albers",
-    "Placement": "R26",
+    "Placement": "CAF",
     "PrideSky": "TBD",
-    "Leader": "Bek"
+    "Leader": "Andrew"
   },
   {
     "FirstName": "Caden",
     "LastName": "Anderson",
-    "Placement": "CAF",
+    "Placement": "R24",
     "PrideSky": "TBD",
-    "Leader": "Brenen"
+    "Leader": "Aleah"
   },
   {
     "FirstName": "Errson",
     "LastName": "Bailey",
     "Placement": "CAF",
     "PrideSky": "TBD",
-    "Leader": "Josh"
+    "Leader": "Thomas"
   },
   {
     "FirstName": "Cyan",
     "LastName": "Beitelspacher",
-    "Placement": "R27",
+    "Placement": "R01",
     "PrideSky": "TBD",
-    "Leader": "Thomas"
+    "Leader": "Bek"
   },
   {
     "FirstName": "Jack",
     "LastName": "Begnaud",
-    "Placement": "R09",
+    "Placement": "R22",
     "PrideSky": "TBD",
-    "Leader": "Aleah"
+    "Leader": "Bek"
   },
   {
     "FirstName": "Chuckles",
     "LastName": "Buboltz",
-    "Placement": "R16",
+    "Placement": "R07",
     "PrideSky": "TBD",
-    "Leader": "Aleah"
+    "Leader": "Thomas"
   },
   {
     "FirstName": "Samwich",
     "LastName": "Carland",
-    "Placement": "R08",
+    "Placement": "R19",
     "PrideSky": "TBD",
     "Leader": "Brenen"
   },
   {
     "FirstName": "Josh",
     "LastName": "Davey",
-    "Placement": "B1G",
+    "Placement": "R18",
     "PrideSky": "TBD",
-    "Leader": "Thomas"
+    "Leader": "Andrew"
   },
   {
     "FirstName": "Julianne",
     "LastName": "Erickson",
-    "Placement": "CAF",
+    "Placement": "R08",
     "PrideSky": "TBD",
-    "Leader": "Thomas"
+    "Leader": "Aleah"
   },
   {
     "FirstName": "Will",
     "LastName": "Giles",
-    "Placement": "R02",
-    "PrideSky": "TBD",
-    "Leader": "Aleah"
-  },
-  {
-    "FirstName": "Reid",
-    "LastName": "Hansche",
-    "Placement": "R21",
-    "PrideSky": "TBD",
-    "Leader": "Andrew"
-  },
-  {
-    "FirstName": "Evan",
-    "LastName": "Hawrysz",
-    "Placement": "CAF",
-    "PrideSky": "TBD",
-    "Leader": "Thomas"
-  },
-  {
-    "FirstName": "Sam",
-    "LastName": "Herrera",
-    "Placement": "R19",
+    "Placement": "R06",
     "PrideSky": "TBD",
     "Leader": "Brenen"
   },
   {
-    "FirstName": "Luke",
-    "LastName": "Hilliard",
-    "Placement": "CAF",
-    "PrideSky": "TBD",
-    "Leader": "Bek"
-  },
-  {
-    "FirstName": "Allison",
-    "LastName": "House",
-    "Placement": "R24",
-    "PrideSky": "TBD",
-    "Leader": "Josh"
-  },
-  {
-    "FirstName": "Eve",
-    "LastName": "Kaegebein",
-    "Placement": "CAF",
-    "PrideSky": "TBD",
-    "Leader": "Bek"
-  },
-  {
-    "FirstName": "Kaden",
-    "LastName": "Kasel",
-    "Placement": "R22",
-    "PrideSky": "TBD",
-    "Leader": "Andrew"
-  },
-  {
-    "FirstName": "Austin",
-    "LastName": "Kempen",
-    "Placement": "CAF",
+    "FirstName": "Reid",
+    "LastName": "Hansche",
+    "Placement": "R14",
     "PrideSky": "TBD",
     "Leader": "Aleah"
   },
   {
-    "FirstName": "Ella",
-    "LastName": "Lang",
-    "Placement": "R01",
+    "FirstName": "Evan",
+    "LastName": "Hawrysz",
+    "Placement": "R13",
+    "PrideSky": "TBD",
+    "Leader": "Andrew"
+  },
+  {
+    "FirstName": "Sam",
+    "LastName": "Herrera",
+    "Placement": "R04",
+    "PrideSky": "TBD",
+    "Leader": "Andrew"
+  },
+  {
+    "FirstName": "Luke",
+    "LastName": "Hilliard",
+    "Placement": "R16",
     "PrideSky": "TBD",
     "Leader": "Josh"
   },
   {
+    "FirstName": "Allison",
+    "LastName": "House",
+    "Placement": "R21",
+    "PrideSky": "TBD",
+    "Leader": "Bek"
+  },
+  {
+    "FirstName": "Eve",
+    "LastName": "Kaegebein",
+    "Placement": "R20",
+    "PrideSky": "TBD",
+    "Leader": "Thomas"
+  },
+  {
+    "FirstName": "Kaden",
+    "LastName": "Kasel",
+    "Placement": "R12",
+    "PrideSky": "TBD",
+    "Leader": "Thomas"
+  },
+  {
+    "FirstName": "Austin",
+    "LastName": "Kempen",
+    "Placement": "R23",
+    "PrideSky": "TBD",
+    "Leader": "Brenen"
+  },
+  {
+    "FirstName": "Ella",
+    "LastName": "Lang",
+    "Placement": "R15",
+    "PrideSky": "TBD",
+    "Leader": "Andrew"
+  },
+  {
     "FirstName": "Chloe",
     "LastName": "Leeseberg",
-    "Placement": "R07",
+    "Placement": "CAF",
     "PrideSky": "TBD",
     "Leader": "Josh"
   },
@@ -151,12 +151,12 @@
     "LastName": "Luiken",
     "Placement": "CAF",
     "PrideSky": "TBD",
-    "Leader": "Thomas"
+    "Leader": "Bek"
   },
   {
     "FirstName": "Aaron",
     "LastName": "Maust",
-    "Placement": "R14",
+    "Placement": "R05",
     "PrideSky": "TBD",
     "Leader": "Brenen"
   },
@@ -165,21 +165,21 @@
     "LastName": "Michelli",
     "Placement": "R11",
     "PrideSky": "TBD",
-    "Leader": "Aleah"
+    "Leader": "Bek"
   },
   {
     "FirstName": "Will",
     "LastName": "Moen",
-    "Placement": "R13",
+    "Placement": "B1G",
     "PrideSky": "TBD",
-    "Leader": "Thomas"
+    "Leader": "Josh"
   },
   {
     "FirstName": "Ruby",
     "LastName": "Nevarez Wielenberg",
-    "Placement": "R06",
+    "Placement": "R02",
     "PrideSky": "TBD",
-    "Leader": "Thomas"
+    "Leader": "Andrew"
   },
   {
     "FirstName": "Brenen",
@@ -191,92 +191,92 @@
   {
     "FirstName": "Nathan",
     "LastName": "Riemer",
-    "Placement": "R28",
+    "Placement": "CAF",
     "PrideSky": "TBD",
-    "Leader": "Brenen"
+    "Leader": "Aleah"
   },
   {
     "FirstName": "Thomas",
     "LastName": "Ritten",
-    "Placement": "R03",
+    "Placement": "B1G",
     "PrideSky": "TBD",
-    "Leader": "Bek"
+    "Leader": "Brenen"
   },
   {
     "FirstName": "Miles",
     "LastName": "Sadler",
-    "Placement": "R05",
+    "Placement": "CAF",
     "PrideSky": "TBD",
     "Leader": "Bek"
   },
   {
     "FirstName": "Aleah",
     "LastName": "Siddiqui",
-    "Placement": "R12",
-    "PrideSky": "TBD",
-    "Leader": "Thomas"
-  },
-  {
-    "FirstName": "Henry",
-    "LastName": "Staat",
     "Placement": "CAF",
-    "PrideSky": "TBD",
-    "Leader": "Josh"
-  },
-  {
-    "FirstName": "Andrew",
-    "LastName": "Stotz",
-    "Placement": "R17",
     "PrideSky": "TBD",
     "Leader": "Brenen"
   },
   {
+    "FirstName": "Henry",
+    "LastName": "Staat",
+    "Placement": "R27",
+    "PrideSky": "TBD",
+    "Leader": "Brenen"
+  },
+  {
+    "FirstName": "Andrew",
+    "LastName": "Stotz",
+    "Placement": "R03",
+    "PrideSky": "TBD",
+    "Leader": "Bek"
+  },
+  {
     "FirstName": "Shu",
     "LastName": "Thomas",
-    "Placement": "R15",
+    "Placement": "R10",
     "PrideSky": "TBD",
     "Leader": "Josh"
   },
   {
     "FirstName": "Grace!",
     "LastName": "Umhoefer",
-    "Placement": "R23",
+    "Placement": "R28",
     "PrideSky": "TBD",
-    "Leader": "Bek"
+    "Leader": "Thomas"
   },
   {
     "FirstName": "Bek",
     "LastName": "Weiman",
-    "Placement": "CAF",
+    "Placement": "R17",
     "PrideSky": "TBD",
-    "Leader": "Isabelle"
+    "Leader": "Thomas"
   },
   {
     "FirstName": "Joel",
     "LastName": "Wilmot",
-    "Placement": "R20",
+    "Placement": "R09",
     "PrideSky": "TBD",
-    "Leader": "Andrew"
+    "Leader": "Bek"
   },
   {
     "FirstName": "Brandon",
     "LastName": "Youngren",
-    "Placement": "R04",
+    "Placement": "CAF",
     "PrideSky": "TBD",
-    "Leader": "Brenen"
+    "Leader": "Aleah"
   },
   {
     "FirstName": "Ben",
     "LastName": "Yost",
-    "Placement": "R18",
+    "Placement": "CAF",
     "PrideSky": "TBD",
-    "Leader": "Andrew"
+    "Leader": "Bek"
   },
   {
     "FirstName": "Grace",
     "LastName": "Zas",
-    "Placement": "R10",
+    "Placement": "CAF",
     "PrideSky": "TBD",
-    "Leader": "Bek"
+    "Leader": "Aleah"
   }
 ]

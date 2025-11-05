@@ -1,166 +1,166 @@
 [
   {
     "Name": "Aaron Maust",
-    "Dot": "R15"
-  },
-  {
-    "Name": "Aleah Siddiqui",
-    "Dot": "R16"
-  },
-  {
-    "Name": "Allison House",
-    "Dot": "R04"
-  },
-  {
-    "Name": "Andrew Stotz",
-    "Dot": "R34"
-  },
-  {
-    "Name": "Austin Kempen",
-    "Dot": "R06"
-  },
-  {
-    "Name": "Bek Weiman",
-    "Dot": "R14"
-  },
-  {
-    "Name": "Ben Yost",
-    "Dot": "R19"
-  },
-  {
-    "Name": "Brandon Youngren",
-    "Dot": "R09"
-  },
-  {
-    "Name": "Brenen Holeson",
-    "Dot": "R41"
-  },
-  {
-    "Name": "Brenen Olson",
     "Dot": "R01"
   },
   {
-    "Name": "Caden Anderson",
-    "Dot": "R07"
+    "Name": "Aleah Siddiqui",
+    "Dot": "R04"
   },
   {
-    "Name": "Chloe Leeseberg",
-    "Dot": "R30"
-  },
-  {
-    "Name": "Chuckles Buboltz",
-    "Dot": "R27"
-  },
-  {
-    "Name": "Cyan Beitelspacher",
-    "Dot": "R08"
-  },
-  {
-    "Name": "Ella Lang",
-    "Dot": "R03"
-  },
-  {
-    "Name": "Errson Bailey",
-    "Dot": "R17"
-  },
-  {
-    "Name": "Evan Hawrysz",
-    "Dot": "R33"
-  },
-  {
-    "Name": "Eve Kaegebein",
+    "Name": "Allison House",
     "Dot": "R26"
   },
   {
-    "Name": "Grace Zas",
-    "Dot": "R22"
-  },
-  {
-    "Name": "Grace! Umhoefer",
+    "Name": "Andrew Stotz",
     "Dot": "R24"
   },
   {
-    "Name": "Henry Staat",
-    "Dot": "R11"
+    "Name": "Austin Kempen",
+    "Dot": "R09"
   },
   {
-    "Name": "Isabelle Albee",
-    "Dot": "R21"
+    "Name": "Bek Weiman",
+    "Dot": "R08"
   },
   {
-    "Name": "Jack Begnaud",
-    "Dot": "R13"
+    "Name": "Ben Yost",
+    "Dot": "R06"
   },
   {
-    "Name": "Joel Wilmot",
-    "Dot": "R05"
+    "Name": "Brandon Youngren",
+    "Dot": "R14"
   },
   {
-    "Name": "Josh Davey",
-    "Dot": "R28"
-  },
-  {
-    "Name": "Julianne Erickson",
-    "Dot": "R18"
-  },
-  {
-    "Name": "Kaden Kasel",
-    "Dot": "R25"
-  },
-  {
-    "Name": "Luke Hilliard",
-    "Dot": "R23"
-  },
-  {
-    "Name": "Martin Michelli",
-    "Dot": "R35"
-  },
-  {
-    "Name": "Max Albers",
-    "Dot": "R31"
-  },
-  {
-    "Name": "Miles Sadler",
-    "Dot": "R38"
-  },
-  {
-    "Name": "Nathan Riemer",
-    "Dot": "R36"
-  },
-  {
-    "Name": "Reid Hansche",
-    "Dot": "R02"
-  },
-  {
-    "Name": "Ruby Nevarez Wielenberg",
-    "Dot": "R29"
-  },
-  {
-    "Name": "Sam Herrera",
-    "Dot": "R37"
-  },
-  {
-    "Name": "Samwich Carland",
-    "Dot": "R12"
-  },
-  {
-    "Name": "Shu Thomas",
+    "Name": "Brenen Holeson",
     "Dot": "R32"
   },
   {
-    "Name": "Thomas Ritten",
+    "Name": "Brenen Olson",
+    "Dot": "R23"
+  },
+  {
+    "Name": "Caden Anderson",
+    "Dot": "R37"
+  },
+  {
+    "Name": "Chloe Leeseberg",
+    "Dot": "R02"
+  },
+  {
+    "Name": "Chuckles Buboltz",
+    "Dot": "R17"
+  },
+  {
+    "Name": "Cyan Beitelspacher",
+    "Dot": "R05"
+  },
+  {
+    "Name": "Ella Lang",
+    "Dot": "R38"
+  },
+  {
+    "Name": "Errson Bailey",
+    "Dot": "R31"
+  },
+  {
+    "Name": "Evan Hawrysz",
+    "Dot": "R16"
+  },
+  {
+    "Name": "Eve Kaegebein",
+    "Dot": "R41"
+  },
+  {
+    "Name": "Grace Zas",
+    "Dot": "R35"
+  },
+  {
+    "Name": "Grace! Umhoefer",
+    "Dot": "R28"
+  },
+  {
+    "Name": "Henry Staat",
     "Dot": "R10"
   },
   {
-    "Name": "Tymek Luiken",
-    "Dot": "R39"
+    "Name": "Isabelle Albee",
+    "Dot": "R18"
   },
   {
-    "Name": "Will Giles",
+    "Name": "Jack Begnaud",
+    "Dot": "R34"
+  },
+  {
+    "Name": "Joel Wilmot",
+    "Dot": "R19"
+  },
+  {
+    "Name": "Josh Davey",
     "Dot": "R20"
   },
   {
-    "Name": "Will Moen",
+    "Name": "Julianne Erickson",
+    "Dot": "R29"
+  },
+  {
+    "Name": "Kaden Kasel",
+    "Dot": "R15"
+  },
+  {
+    "Name": "Luke Hilliard",
+    "Dot": "R13"
+  },
+  {
+    "Name": "Martin Michelli",
+    "Dot": "R25"
+  },
+  {
+    "Name": "Max Albers",
     "Dot": "R40"
+  },
+  {
+    "Name": "Miles Sadler",
+    "Dot": "R27"
+  },
+  {
+    "Name": "Nathan Riemer",
+    "Dot": "R12"
+  },
+  {
+    "Name": "Reid Hansche",
+    "Dot": "R11"
+  },
+  {
+    "Name": "Ruby Nevarez Wielenberg",
+    "Dot": "R30"
+  },
+  {
+    "Name": "Sam Herrera",
+    "Dot": "R33"
+  },
+  {
+    "Name": "Samwich Carland",
+    "Dot": "R07"
+  },
+  {
+    "Name": "Shu Thomas",
+    "Dot": "R22"
+  },
+  {
+    "Name": "Thomas Ritten",
+    "Dot": "R21"
+  },
+  {
+    "Name": "Tymek Luiken",
+    "Dot": "R36"
+  },
+  {
+    "Name": "Will Giles",
+    "Dot": "R39"
+  },
+  {
+    "Name": "Will Moen",
+    "Dot": "R03"
   }
 ]
